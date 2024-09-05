@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online bus ticket booking </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../stylesheet/style.css">
+
+</head>
+
+<body>
+    <div class="mian">
+        <div class="">
+            <header>
+                <nav class="navbar">
+                    <div class="logo"><img src="../images/logo.png" alt=""></div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="">
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Our Transportation Service</h1>
+                    <p>Your journey begins here.</p>
+                </div>
+                <div class="bus-container">
+                    <div class="bus bus-1"></div>
+                    <div class="bus bus-2"></div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="">
+            <section class="booking">
+                <div class="form-container">
+                    <h1>Book Your Bus Ticket</h1>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="departure">Departure :</label>
+                            <input type="text" id="departure" name="departure" placeholder="From " required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination:</label>
+                            <input type="text" id="destination" name="destination" placeholder="To " required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Departure Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Seat Type:</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="seatType" value="ac" required>
+                                    AC
+                                </label>
+                                <label>
+                                    <input type="radio" name="seatType" value="non-ac">
+                                    Non-AC
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit">Search Buses</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="cards">
+            <div class="card_text">
+                <span id="luxury">luxury Buses</span>
+            </div>
+            <div class="border"> </div>
+            <div class="container">
+                <div class="bus-category" id="best">
+                    <img src="../images//lux4.webp" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">Best Bus</div>
+                    </div>
+                </div>
+                <div class="bus-category" id="tmt">
+                    <img src="../images/best2.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+                <div class="bus-category" id="nmt">
+                    <img src="../images/best3.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+                <div class="bus-category" id="nmt">
+                    <img src="../images/luxto6.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+
+                <div class="bus-category" id="nmt">
+                    <img src="../images/luxto5.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+                <div class="bus-category" id="nmt">
+                    <img src="../images/luxto4.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+                <div class="bus-category" id="nmt">
+                    <img src="../images/best.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+
+                <div class="bus-category" id="nmt">
+                    <img src="../images/luxto3.png" alt="luxury bus" class="bus-image">
+                    <div class="overlay">
+                        <div class="text">luxury bus</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="swipe_cards">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+
+
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer_cards" id="best">
+                        </div>
+
+                        <div class="offer_img_box">
+                            <img id="offer_img" src="../images/logo3.png" alt="">
+
+                        </div>
+
+                        <div class="offer_line">
+                        </div>
+                        <div class="text_box">
+
+                            <span class="special_offer">get flat <br><strong><span id="discount">20%</span></strong><br>
+                                discount<br>
+                                on your first bus
+                                ride</span>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chart_main">
+            <div class="chart_sub">
+                <img id="chart_img" src="../chart/chatr.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <footer>
+                <div class="footer_div">
+                    <div class="heading">
+                        <h2>BronZ<sup>™</sup></h2>
+                    </div>
+                    <div class="content">
+                        <div class="services">
+                            <h4>Services</h4>
+                            <p><a href="#">Transportation</a></p>
+                            <p><a href="#">Public Transportation</a></p>
+                            <p><a href="#">Logistics</a></p>
+
+                        </div>
+                        <div class="social-media">
+                            <h4>Social</h4>
+                            <p>
+                                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                            </p>
+                            <p>
+                                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            </p>
+                            <p>
+                                <a href="https://github.com"><i class="fab fa-github"></i> Github</a>
+                            </p>
+                            <p>
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
+                                    Facebook</a>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
+                                    Instagram</a>
+                            </p>
+                        </div>
+                        <div class="links">
+                            <h4>Quick links</h4>
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#">About</a></p>
+                            <p><a href="#">Blogs</a></p>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                        <div class="details">
+                            <h4 class="address">Address</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br />
+                                adipisicing elit. Cupiditate, qui!
+                            </p>
+                            <h4 class="mobile">Mobile</h4>
+                            <p><a href="#">+91-12225*****</a></p>
+                            <h4 class="mail">Email</h4>
+                            <p><a href="#">khanshoaib60@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+<script src="../javascript/index.js"></script>
+
+
+</html>
